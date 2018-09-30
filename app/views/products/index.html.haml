@@ -3,6 +3,7 @@
 - else
     = link_to "Login", new_user_session_path
 = render 'partials/welcome'
+.container
 -@categories.each do |category|
     %p= category.name
     -category.products.each do |product|

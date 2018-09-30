@@ -1,48 +1,72 @@
-# Craft Academy Rails 5.2 Boilerplate
+## **SlowFood - Team 1**
+### *Week 5 Lab*
+-------
+### Prerequisites
+-------
+Installed gems:
+* Launchy
+* Shoulda-matchers
+* Factory bot
+* Faker
+* Devise
+* Cartify 
 
-In order to get you started with Rails, we've set up a boilerplate application using the following setup:
-* Rails 5.2
-* Cucumber - acceptance testing framework
-* RSpec - testing framework that we will be using for unit testing
-* ShouldaMatchers - to simplify our testing in RSpec
+
+### Built With
+-------
+
+* [haml](http://haml.info/) - Markup language
+* [Ruby](https://www.ruby-lang.org/en/) - Programming language
+* [Rails](https://rubyonrails.org/) - Server-side web application framework
 
 
-## Setup
 
-1. Copy the url an clone the repository to you `localhost`
+### **Overview**
+-------
+The purpose of this lab is to create an online food ordering system web-based application that allows customers to order their food for home delivery, or for pick up from the restaurant.
 
-2. Open the `config/application.rb` and chage the application name from `Boilerplate` to whatever you want to call your application (i.e. `SlowFoodOnline`) 
 
-  
-  ```ruby
-  module SlowFoodOnline
-    class Application < Rails::Application
-    # ... code removed for readability.
-  end
-  ```
- 
-3. Open the `config/database.yml` and change the database name from `boilerplate_test`, `boilerplate_development`, etc, to for example `slow_food_test`, `slow_food_development` and `slowfood_production`. Also, if you see a `username` set to `boilerplate` change that to `slow_food` as well (Again, if you use a different name for your app, make sure you follow the naming standard outlined in the examples above).
+### **User Stories**
+-------
+#### The article site is working with the following associated user stories:
 
-4. In your terminal, inside the project folder, run the following command to **remove** the Git original repository: 
+* **SHOW PRODUTCS:** 
 
-  ```
-  $ rm -rf .git
-  ```
-  
-5. And initiate a new repository (that will give you a clean state and history)
- 
-  ```
-  $ git init
-  ```
- 
-6. Now, head over to GitHub and create a new repository on your account. Copy the repo url, and add it as your `origin` remote.
+As a user,
+In order to be able to pick a product,
+I would like to see the products available with a name, description and price
 
-  ```
-  $ git remote add origin <your repo url>
-  ```
- 
-7. Run `bundle install` and `rails db:create db:migrate` in your terminal (in the project folder)
+* **SHOW CATEGORIES:** 
+As a user,
+In order to help me chose products,
+I would like to see the products presented by category
 
-8. Commit and push to your remote.
-  
-This should give you a clean repo history.
+* **LANDING PAGE:** 
+As a user,
+In order to see the service that the restaurant provides,
+I would like to visit a landing page with a welcome message and information about the restaurant
+
+* **LOGIN:** 
+As a user
+In order to be able to login to my personal account
+I would like to be able to fill in my details on the login page
+
+* **REGISTER AS USER:** 
+As a user
+In order to be able to register for an account
+I would like to be able to provide my details on the register page
+
+* **ADD TO CART:** 
+As a user,
+In order to select products for later purchase
+I would like to be able to add products to my cart
+
+* **CHECKOUT BASKET:** 
+As a user,
+In order to complete my purchase,
+I would like to be able to confirm and pay for my selections on the checkout page
+
+* **CHECKOUT CONFIRMATION:** 
+As a user,
+In order to know what I have bought,
+I would like to see a confirmation of my order after checking out and when it will be available for pick up

@@ -15,9 +15,13 @@ Then("I am on the signup page") do
 end
 
 Then("I am on the checkout page") do
-    expect(current_path).to eq cartify.cart_path
+    expect(page.current_path).to eq cartify.cart_path
 end
   
 Then("I am on the login page") do
     expect(page.current_path).to eq new_user_session_path
+end
+
+Then("I should be on the delivery page") do
+    expect(page).to have_current_path('/checkout/delivery')
 end
